@@ -1,92 +1,76 @@
-<html>
-<body>
-<div>
-    <title>Salam-Dari-Binjai-Network.gq | Trend dari Indonesia!</title>
-<noscript><p style="color: white;">Javascript needed to access the site. <a href="https://www.w3schools.com/tags/tag_noscript.asp">see more</a></p></noscript>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="viewport">
+<html lang="en">
 <head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="apple-touch-icon" sizes="180x180" href="//Salam-Dari-Binjai-Network.gq/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="//Salam-Dari-Binjai-Network.gq/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="//Salam-Dari-Binjai-Network.gq/favicon-16x16.png">
-<link rel="shortcut icon" sizes="16x16" href="./img/favicon.ico">
-
-<link rel="manifest" href="//Salam-Dari-Binjai-Network.gq/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta 3.0</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+<link rel="shortcut icon" sizes="16x16" href="https://Salam-Dari-Binjai-Network.gq/img/favicon.ico">
+<script src="script.js"></script>
+<link rel="manifest" href="https://Salam-Dari-Binjai-Network.gq/site.webmanifest">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
-
-<!-- particles.js container --> 
-<div id="particles-js"></div>
-
-<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<center>
-<b><h3 style="color: white;">Salam-Dari-Binjai-Network.gq</h3></b>
-<p style="color: white;">"Salam-Dari-Binjai-Network.gq sudah ter-update, Maaf Jika Ada Bug. ( ya maaf kalo burik, karena yng bikin bocil juga)"</p>
-<p style="color: white;">Menemukan Bug? Silahkan kirim email report di scoobydeveloper129@gmail.com</p>
-<p style="color: white;">Salam-Dari-Binjai-Network.gq Di rilis Oleh Anak 10 tahun Asal Indonesia , Di ciptakan karena tren "SALAM DARI BINJAI" Dari TikTok.Di rilis pada tahun 2021.</p>
-<p style="color: white;">HINT! KLIK PISANG BUAT MAININ GAME NYA!</p>
-<b><h4 style="color: white;">
-<script>
-
-
-var getName = prompt("Siapa nama mu ? ");
-
-
-if (getName === null || !isNaN(getName)){
-    while (getName !== null || isNaN(getName)){
-        alert("Invalid , please try again");
-        getName = prompt("Siapa namamu ? ");
-        console.log(getName)
-       if (getName !== null || !isNaN(getName)){
-           document.write("Halo ", getName);
-           break;
+<body>
+    <center>
+    <h1 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 lg:font-extrabold lg:text-10xl lg:leading-none dark:text-white lg:text-center xl:px-36 lg:mb-7">Salam-Dari-Binjai-Network.gq</h1>
+     <h5 class="text-black dark:text-white text-center font-extrabold"><script>document.write("Halo ", getName);</script></h5>
+     <a href="mailto:mail@1121dev.cf?Subject=BugReport" target="_top"> <button onclick="debug()" class="mx-2 px-15 py-2 rounded-full  bg-gray-300 hover:bg-gray-500 text-black font-bold p-4">Report Bugs</button></a>
+     <b><h4 class="text-center font-extrabold text-black dark:text-white">Score :<div id="score">
+     </center>
+    </script></div></B></h4>
+     <div class="ctr">
+    
+     <audio id="audio" src="https://Salam-Dari-Binjai-Network.gq/lol.mp3"></audio>
+       <img class="button" id="movingbutton" width="250" height="250" draggable="false" src="https://Salam-Dari-Binjai-Network.gq/img/pisang.png"></img>
+      <script> 
+      var b = document.querySelector("#movingbutton");
+       b.addEventListener("click",change);
+       
+       function change()
+       {
+       let i =Math.abs(Math.floor(Math.random()*window.innerWidth-55))
+       let j = Math.abs(Math.floor(Math.random()*window.innerHeight-21));
+       console.log('here' , i ,j , b.style.left , b.style.top);
+           b.style.left = i+'px';
+           b.style.top = j + "px";
        }
-    }
-}else {
-    document.write("Halo ", getName);
-    alert("Maaf kalo grafik nya BURIK");
-    alert("Tujuan : Dapetin Score TerBANYAK (hati2 kalo di refresh, ya ilang score nya) ");
-    alert("HINT! KLIK PISANG BUAT MAININ GAME NYA");
-}
-
-
-window.addEventListener('beforeunload', function (e) {
-  // Cancel the event
-  e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
-  // Chrome requires returnValue to be set
-  e.returnValue = '';
-});
-
-
-</script>
-</b></h4>
-<b><h4 style="color: white;">Score :<div id="score">
-
-</script></div></B></h4>
- <div class="ctr">
-
- <audio id="audio" src="./lol.mp3"></audio>
- </center>
- <center>
-   <img class="button" id="movingbutton" width="250" height="250" draggable="false" src="./img/pisang.png" class="center"></img>
-   </center>
- </div>
-</body>
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-
-
-
- #movingbutton{
+          
+          (function() {
+                       var score = 0;
+                       var phone = document.getElementById("movingbutton");
+                       phone.onclick=function(){
+                           score++;
+                           output = document.getElementById("score");
+                           output.innerHTML = score;
+                       };
+                   })();
+       
+                    (function() {
+                       var coin = 0;
+                       var phone = document.getElementById("movingbutton");
+                       phone.onclick=function(){
+                           coin++;
+                           output = document.getElementById("score");
+                           output.innerHTML = coin;
+                       };
+                   })();
+       document.getElementById("movingbutton").addEventListener("click", function(){
+           document.getElementById("audio").play();
+       });
+       
+       document.getElementById("darkmode").addEventListener("click", function(){
+           document.getElementById("audio2").play();
+       });
+      
+       function debug() {
+        alert("Tidak Bisa Membuka Email? Report Ke mail@1121dev.cf jika Tidak memunculkan Gmail / Yang Lain.");
+       }
+           </script>
+           <style>
+  #movingbutton{
      
  cursor: pointer;
   position: absolute; 
@@ -105,264 +89,6 @@ text-align: center;
     text-align: center;
     }
 
-
-
-#myDiv {
-  display: none;
-  text-align: center;
-}
-
-
-
-        body{
-        padding:0% 3% 10% 3%;
-        text-align:center;
-        }
-        h1{
-        color: #32a852;
-        margin-top:30px;
-        }
-     
-        button{
-            cursor: pointer;
-            border: 1px solid #555;
-            text-align: center;
-            padding: 5px;
-            margin-left: 8px;
-        }
-        .dark{
-            background-color: #222;
-            color: #e6e6e6;
-        }
-
-/* ---- reset ---- */
-
-body {
-  margin: 0;
-  background-color: #17182f;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-
-.outer-wrapper{
-        display: inline-block; 
-        margin: 20px;
-    }
-    .frame{  
-        width: 250px;
-        height: 200px;
-        border: 1px solid black;
-        vertical-align: middle;
-        text-align: center;
-        display: table-cell;
-    }    
-    img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-    </style>
-  
-<p style="color: white;">
-    <script>
-           var b = document.querySelector("#movingbutton");
-b.addEventListener("click",change);
-
-function change()
-{
-let i =Math.abs(Math.floor(Math.random()*window.innerWidth-55))
-let j = Math.abs(Math.floor(Math.random()*window.innerHeight-21));
-console.log('here' , i ,j , b.style.left , b.style.top);
-    b.style.left = i+'px';
-    b.style.top = j + "px";
-}
-   
-   (function() {
-                var score = 0;
-                var phone = document.getElementById("movingbutton");
-                phone.onclick=function(){
-                    score++;
-                    output = document.getElementById("score");
-                    output.innerHTML = score;
-                };
-            })();
-
-             (function() {
-                var coin = 0;
-                var phone = document.getElementById("movingbutton");
-                phone.onclick=function(){
-                    coin++;
-                    output = document.getElementById("score");
-                    output.innerHTML = coin;
-                };
-            })();
-document.getElementById("movingbutton").addEventListener("click", function(){
-    document.getElementById("audio").play();
-});
-
-document.getElementById("darkmode").addEventListener("click", function(){
-    document.getElementById("audio2").play();
-});
-
-
-    document.write("Running On Version 2.0 BETA");
-</script>
-<script>
-  function dark() {
-        var element = document.body;
-        element.classList.toggle("dark");
-        alert("Lebih baik hitam daripada putih... Setuju?");
-        }
-
- function prank() {
-        alert("BENERAN?????");
-        }
-
-
-        particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 355,
-      "density": {
-        "enable": true,
-        "value_area": 789.1476416322727
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.48927153781200905,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 0.2,
-        "opacity_min": 0,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 2,
-      "random": true,
-      "anim": {
-        "enable": true,
-        "speed": 2,
-        "size_min": 0,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": false,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 0.2,
-      "direction": "none",
-      "random": true,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 83.91608391608392,
-        "size": 1,
-        "duration": 3,
-        "opacity": 1,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-
-var object = document.getElementById('item');
-
-object.onclick=function(){
-    var x = Math.floor(Math.random()*300);
-    var y = Math.floor(Math.random()*300);
-    object.style.top = x + 'px';
-    object.style.left = y + 'px';
-};
-</script>
-<p style="color: white;">
-<button id="darkmode" onclick="dark()">Dark Mode (Cocok untuk malam hari)</button>
- <audio id="audio2" src="./vineboom.mp3"></audio>
- <a href="/" target="_blank">
- <button onclick="prank()" id="prank">FREE SCORE HERE!</button>
- <audio id="audio2" src="./vineboom.mp3"></audio>
- </a> 
- </body>
- </html>
-
-
-
- 
+           </style>
+    </body>
+</html>
