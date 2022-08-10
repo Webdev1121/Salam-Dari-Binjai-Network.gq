@@ -15,20 +15,19 @@
         <p class="text-xl">
             Anti Bot Protection, Please Pass The Easy Captcha Challenge.
         </p>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script type="text/javascript">
-           if (grecaptcha.getResponse() == "success") {
-        function Redirect() {
-            window.location.href = "https://www.salam-dari-binjai-network.gq/game";
-        }
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+  if (grecaptcha.getResponse() == "success") {
+    function Redirect() {
+      window.location.href = "https://salam-dari-binjai-network.gq/game"; // Correct here
+    }
+    document.write("You will be redirected to a new page in 5 seconds ");      
+      setTimeout(Redirect,5000); // Correct here
+  }
+  else alert("You can't proceed!");
+</script>
 
-        Redirect()
-
-        setTimeout(Redirect, 1000);
-    } else alert("You can't proceed!");
-        </script>
-        
-        <div data-type="image" class="g-recaptcha" data-sitekey="6LcvU2IhAAAAALF80dGpEkMljE08dWeLHalO7s32"></div>
+  <div data-type="image" class="g-recaptcha" data-sitekey="6LcvU2IhAAAAALF80dGpEkMljE08dWeLHalO7s32"></div>
     </div>
 </body>
 </html>
