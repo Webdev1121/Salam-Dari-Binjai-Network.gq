@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiBot</title>
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body>
+    
+  <div class="flex h-screen justify-center items-center">
+    <div class="text-center bg-blue-400"> <!-- ⬅️ THIS DIV WILL BE CENTERED -->
+        <h1 class="text-3xl">Salam-Dari-Binjai-Network.gq</h1>
+        <p class="text-xl">
+            Anti Bot Protection, Please Pass The Easy Captcha Challenge.
+        </p>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script type="text/javascript">
+            if (grecaptcha.getResponse() == "success") {
+                window.location.href = "https://salam-dari-binjai-network.gq/game";
+        
+                setTimeout(Redirect, 1000);
+            } else alert("You can't proceed!");
+        </script>
+        
+        <div data-type="image" class="g-recaptcha" data-sitekey="6LftIWIhAAAAAP32cK4S3lz93PfogM-8cYf0IaWj"></div>
+    </div>
+</body>
+</html>
