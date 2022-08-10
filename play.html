@@ -6,19 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SalamDariBinjai 4.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        var b = document.querySelector("button");
-b.addEventListener("click",change);
-function change()
-{
-    var i = Math.floor(Math.random()*500)+1;
-    var j = Math.floor(Math.random()*500)+1;
-    b.style.left = i+"px";
-    b.style.top = j+"px";
-}
-    </script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
     <style>
-        button{
+        #movingbutton{
     display: block;
     position: absolute;
 }
@@ -36,7 +26,32 @@ function change()
       </div>
     <div class="items-center flex justify-center text-center">
         <h1 class="font-extrabold text-6xl">Salam-Dari-Binjai-Network.gq</h1>
-        <button><img src="/img/pisang.png" alt="pisang" width="250" height="250" class="move"/></button>
+        <b><h4 class="text-center font-extrabold text-black dark:text-white hover:underline">Score :<div id="score"></h4>
+<audio id="audio" src="./lol.mp3"></audio>
+       <img class="button rounded-lg" id="movingbutton" width="150" height="150" draggable="false" src="./img/pisang.png"></img>
+      <script> 
+      var b = document.querySelector("#movingbutton");
+       b.addEventListener("click",change);
+
+       function change()
+       {
+       let i =Math.abs(Math.floor(Math.random()*window.innerWidth-55))
+       let j = Math.abs(Math.floor(Math.random()*window.innerHeight-21));
+       console.log('here' , i ,j , b.style.left , b.style.top);
+           b.style.left = i+'px';
+           b.style.top = j + "px";
+       }
+
+          (function() {
+                       var score = 0;
+                       var phone = document.getElementById("movingbutton");
+                       phone.onclick=function(){
+                           score++;
+                           output = document.getElementById("score");
+                           output.innerHTML = score;
+                       };
+                   })()
+ </script>
 
     </div>
 </body>
