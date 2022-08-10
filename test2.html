@@ -17,11 +17,15 @@
         </p>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script type="text/javascript">
-            if (grecaptcha.getResponse() == "success") {
-                window.location.href = "https://salam-dari-binjai-network.gq/game";
-        
-                setTimeout(Redirect, 1000);
-            } else alert("You can't proceed!");
+           if (grecaptcha.getResponse() == "success") {
+        function Redirect() {
+            window.location.href = "https://www.salam-dari-binjai-network.gq/game";
+        }
+
+        Redirect()
+
+        setTimeout(Redirect, 1000);
+    } else alert("You can't proceed!");
         </script>
         
         <div data-type="image" class="g-recaptcha" data-sitekey="6LcvU2IhAAAAALF80dGpEkMljE08dWeLHalO7s32"></div>
